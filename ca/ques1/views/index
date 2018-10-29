@@ -1,0 +1,1 @@
+<h1>WELCOME TO INDEX PAGE</h1>

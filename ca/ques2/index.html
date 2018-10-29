@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello world</title>
+   </head>
+   <script src = "/socket.io/socket.io.js">     
+   </script>
+   <script>
+       var socket = io();
+
+       socket.on('ServerEvent',function(data){
+        
+         document.getElementById("main").innerHTML=data.desc;
+      
+       });
+  
+   </script>
+   <body>
+       <h1>Socket Programming Demo</h1>
+        
+        <span id="main"></span>
+       
+    </body>
+</html>
